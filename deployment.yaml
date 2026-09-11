@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iot-app-afaby-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iot-app-afaby
+  template:
+    metadata:
+      labels:
+        app: iot-app-afaby
+    spec:
+      containers:
+      - name: iot-app-afaby
+        image: wil42/playground:v1
