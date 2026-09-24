@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: iot-app-afaby
-        image: wil42/playground:v2
+        image: wil42/playground:v1
